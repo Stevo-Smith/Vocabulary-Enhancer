@@ -1,10 +1,5 @@
 filename = "text.txt"
 list_of_words = []
-class String
-    def is_integer?
-        self.to_i.to_s == self
-    end
-end
 File.open(filename, "r") do |file|
   file.each_line do |line|
     words = line.split(/\W+/).map(&:downcase) 
