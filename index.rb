@@ -12,4 +12,4 @@ lines.each do |l|
   end
 end
 
-p words
+puts words.keys
